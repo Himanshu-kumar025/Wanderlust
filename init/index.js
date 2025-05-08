@@ -3,7 +3,8 @@ const Listing = require("../models/listing.js");
 const initdata = require("./data.js");
 
 // setup mongoose
-let MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+let MONGO_URL = "mongodb+srv://wanderlust:wanderlust1880@wanderlust.2epllgd.mongodb.net/?retryWrites=true&w=majority&appName=wanderlust";
 // const dburl = process.env.ATLASDB_URL;
 
 main()
@@ -20,7 +21,7 @@ async function main(){
 
 let initdb = async()=>{
    await Listing.deleteMany({});
- initdata.data = initdata.data.map((obj)=> ({...obj , owner:'67803f2e234318b0ca1f08c9'}))
+ initdata.data = initdata.data.map((obj)=> ({...obj , owner:'67ff25d1f5307578b5706eaa'}))
    await Listing.insertMany(initdata.data);
 }
 

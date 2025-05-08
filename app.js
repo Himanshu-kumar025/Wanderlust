@@ -38,9 +38,9 @@ app.engine("ejs" , ejsmate);
 
 
 // Setup mongoose
-let MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+// let MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
-const dburl = process.env.URL;
+const dburl = process.env.DB_URL;
 
 main()
 .then((res)=>{
