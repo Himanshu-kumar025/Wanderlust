@@ -2,9 +2,8 @@ const mongoose = require("mongoose");
 const Listing = require("../models/listing.js");
 const initdata = require("./data.js");
 
-// setup mongoose
-// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
-let MONGO_URL = "mongodb+srv://wanderlust:wanderlust1880@wanderlust.2epllgd.mongodb.net/?retryWrites=true&w=majority&appName=wanderlust";
+
+let MONGO_URL ="mongodb://127.0.0.1:27017/wanderlust" ;
 // const dburl = process.env.ATLASDB_URL;
 
 main()
